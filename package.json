@@ -1,0 +1,43 @@
+{
+  "name": "nor-rpn",
+  "version": "1.0.0",
+  "description": "逆波兰表达式与或运算规则",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "dev": "tsc -w",
+    "test": "jest --config jestconfig.json --collect-coverage; exit 0",
+    "build": "npm run clean && tsc",
+    "prepublishOnly": "npm run test",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "rpn",
+    "nor"
+  ],
+  "author": "Mervyn Yang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.code.oa.com/mervynyang/NOR-RPN.git"
+  },
+  "bugs": {
+    "url": "https://git.code.oa.com/mervynyang/NOR-RPN/issues"
+  },
+  "homepage": "https://git.code.oa.com/mervynyang/NOR-RPN#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "cpr": "^3.0.1",
+    "eslint": "^7.8.1",
+    "eslint-config-tencent": "^1.0.0",
+    "jest": "^26.4.2",
+    "shx": "^0.3.2",
+    "ts-jest": "^26.3.0",
+    "typedoc": "^0.19.1",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {}
+}
